@@ -1,0 +1,60 @@
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+}
+main {
+  background-image: url(./imges/leaves-5163801_1920.jpg);
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* טופס */
+input {
+  height: 50px;
+}
+
+.btn {
+  font-size: 150%;
+}
+
+.rndimg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.about{
+    padding: 20px;
+    background-image: url(./imges/hd-wallpaper-1074131_1280.jpg);
+    background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+/*  קו אנכי שמפריד בין משתמשים במסך גדול*/
+.h-line {
+  /* מירכוז באמצע הדיב */
+  margin-left: 50%;
+  width: 1px;
+  /* שימלא את כל הגובה */
+  height: 100%;
+  border: solid black;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  /* להעלים קו אנכי במסך קטן */
+  .h-line {
+    display: none;
+  }
+
+  /* יישור לשמאל  */
+  .card {
+    align-items: start;
+    /* על-מנת לסדר אותם שיהיו בשורה אחת גם התמונה וגם הכיתוב */
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .updn{
+    flex-direction: column-reverse;
+  }
+}
